@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="my">
+
+    <head>
+        <title>Anime!!!</title>
+        <style>
+            h2{
+                font-size: 60px;
+                text-align: center;
+                padding: 0;
+                margin: 23px;
+                color: red;
+            }
+            .block1,
+            .block2,
+            .block3{
+                padding: 10px;
+                flex: 1;
+                background: black;  
+            }
+            .block1{
+                border-top-left-radius: 40px;
+                border-bottom-left-radius: 40px;   
+            }
+            .block3{
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+            .block4{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+
+                background-color: gray;
+                border-radius: 10px;
+
+
+                width: 300px;
+                height: 200px;
+
+                padding: 0px;
+                margin: 0px auto 20px auto;
+            }
+            .block4:hover{
+                background-color: transparent;
+                color: transparent;
+            }
+            .anecdote_text{
+                opacity: 1;
+            }
+            .block4:hover .anecdote_text{
+                opacity: 0;
+                display: none;
+            }
+            .anecdote_image{
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+                display: none;
+                border-radius: 10px;
+            }
+            .block4:hover .anecdote_image{
+                opacity: 1;
+                display: inline-block;
+            }
+            .block_dark_fantasy{
+                background: black;
+                object-position: center;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .block_hajime_no_ippo1,
+            .block_hajime_no_ippo2{
+                flex: 1;
+                background: black;
+            }
+            .block_hajime_no_ippo1{
+                color: white;
+                padding: 15px;
+                font-size: x-large;
+                
+            }
+            .block_hajime_no_ippo2{
+                display: flex;
+                align-items: center;
+            }
+            .parentblock{
+                display: flex;
+            }
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70%;
+            }
+            .blocktext {
+                border: 3px dashed black;
+                background: gray;
+                border-radius: 20px;
+                
+                margin-left: auto;
+                margin-right: auto;
+
+                padding: 10px;
+
+            }
+            .music_player{
+                object-position: center;
+                display: block;
+                margin: 5px auto 0px auto;
+                width: 20%;
+
+                border: 7px solid #4e4a4a;
+                border-radius: 40px;
+                
+                box-shadow: 0px 0px 10px rgb(255, 255, 255);
+            }
+            .title_style{
+                border: 5px solid rgb(255, 0, 0);
+                border-radius: 70px;
+                background: rgb(44, 44, 44);
+                
+                margin: 0px auto 10px auto;
+                padding: 20px;
+
+                width: 400px;
+            }
+            .quotes_up{
+                margin-left: 20px;
+            }
+            .quotes_down{
+                font-size: 20px;
+                font-weight: bold;
+  
+                margin: 0px 0px 20px 40px;
+            }
+            li{
+                color: white;
+            }
+            caption,
+            table,
+            th,
+            td {
+                align-items: center;
+                text-align: center;
+
+                font-size: large;
+                color: rgb(255, 255, 255);
+                margin: auto;
+
+                border: 3px solid white;
+                border-collapse: collapse;
+                background-color: rgb(63, 63, 63);
+            }
+            th{
+                padding: 20px;
+            }
+            td{
+                padding: 5px;
+            }
+            caption{
+                font-size:x-large;
+            }
+        </style>
+    </head>
+
+    <body style = "background-color:rgb(29, 28, 28)">
+        <h2 class="title_style">
+            Анекдоты!
+        </h2>
+        <div class = "parentblock">
+            <div class = "block1">
+                <div class="block4">
+                    <p class="anecdote_text">
+                        Идет псих по больнице с окpовавленным топоpом. Hавстpечу ему вpач.<br>
+                        - Ты что сделал?<br>
+                        - Ой смеху-то, Васька пpоснется, а у него голова в тумбочке!
+                    </p>
+                    <img class = "anecdote_image" src="images/Анекдот_про_психопата.png">
+                </div>
+            </div>
+
+            <div class = "block2">
+                <div class="block4">
+                    <p class="anecdote_text">
+                    — В салоне есть доктор?<br> 
+                    — Да. <br>
+                    — Какая у вас специальность? <br>
+                    — Я доктор математических наук.<br>
+                    — Как жаль, у нас тут один пассажир умирает!..<br>
+                    — Минус один.
+                    </p>
+                    <img class="anecdote_image" src="images/Анекдот_про_доктора.png">
+                </div>
+            </div>
+
+            <div class = "block3">
+                <div class = "block4">
+                    <p class = "anecdote_text">
+                        Если бы моя бабушка знала как хорошо мне удалось сэкономить на ее похоронах...<br>
+                        она бы в канаве перевернулась.
+                    </p>
+                    <img class="anecdote_image" src="images/Анекдот_про_бабку.png">
+                </div>
+            </div>  
+        </div>
+        <div class="block_dark_fantasy">
+            <img 
+            src="images/knight_dak_fantasy.jpg"
+            alt = "knight_dark_fantasy"
+            loading="lazy"
+            class = "center"
+            >
+        <audio controls class = "music_player">
+            <source src="music/dustum—dark_fantasy(www.lightaudio.ru).mp3" type="audio/mpeg">   
+        </audio>
+    </div>
+        <div>
+            <p class = "blocktext">
+                Ниже представлено описание, отзыв и цитаты последнего просмотренного контента
+            </p>
+        </div>
+        <div class = "parentblock">
+            <div class = "block_hajime_no_ippo1">
+                <section>
+                    <h2>
+                        Hajime no ippo(Первый шаг)
+                    </h2>
+                    <p>
+                        Над Иппо Макуночи издевались всю его жизнь: постоянно на побегушках,
+                        избиваемый одноклассниками, он мечтает измениться,но ему не хватает
+                        решимости. Однажды, в разгар очередного издевательства Иппо спасает
+                        боксер Такамура Мамору, и приносит,потерявшего от побоев сознание,
+                        Иппо в спортивный зал. Очнувшись, Иппо поражен обстановкой в тренажерном
+                        зале, но не решается ступить и шагу.Такамура вешает фото его одноклассника
+                        на боксерскую грушу и заставляет Иппо ударить её. В конце концов Иппо решается
+                        и просит Такамуру научить его боксу,но Такамура, не веря в его способности,
+                        поручает Иппо за неделю сделать невыполнимую задачу, с этого момента начинается
+                        его путь Боксера.
+                    </p>
+                </section>
+                <section>
+                    <h2>
+                        Отзыв
+                    </h2>
+                    <p>
+                        В данный момент я еще не досмотрел данное произведение до конца, однако уже, могу написать отзыв. Это аниме однозначно стоит посмотреть. Даже если не фанат спорта.
+                        Это история про обычного парня, который нашёл себя в боксе. Без магии, без сверхспособностей, или еще какой мистики — просто труд, терпение и желание стать сильнее. Это аниме не про драки, а про характер: как падать, вставать и снова идти вперёд.
+                        Здесь живые персонажи, за которых реально переживаешь. Смешные моменты, которые разбавляют серьёзные бои, а мотивация после просмотра зашкаливает так, что хочется заняться чем угодно, лишь бы не сидеть без дела.
+                        Да, рисовка старая, серий много. Но это тот случай, когда быстро втягиваешься и уже не можешь оторваться.
+                    </p>
+                </section>
+                <section>
+                    <h2>
+                        Цитаты:
+                    </h2>
+                        <dl>
+                            <dt class="quotes_up">
+                                <q>Тяжелая работа. Потому что нет ничего более яркого пути, чем тяжелая работа</q>
+                            </dt>
+                            <dd class="quotes_down">
+                                ©Камигава Гэндзи
+                            </dd>
+                            <dt class="quotes_up">
+                                <q>Слова больно гораздо сильнее. Гораздо сильнее, чем кулаки травмируют тело</q>
+                            </dt>
+                            <dd class="quotes_down">
+                                ©Таке Кеичи
+                            </dd>
+                            <dt class="quotes_up">
+                                <q>Я ненавижу людей, которые бьют тех, кто слабее. Но еще больше мне противны те, кто не может дать сдачи</q>
+                            </dt>
+                            <dd class="quotes_down">
+                                ©Мамору Такамура
+                            </dd>
+                        </dl>
+ 
+                </section>
+            </div>
+            <div class = "block_hajime_no_ippo2">
+                <img src = "images/ippo_image.jpg" alt = "Hajime_no_ippo_paint" height="1000" loading="lazy" class = "center">
+            </div>
+        </div>
+        <div>
+            <table border="3">
+                <caption>Зенит РПЛ</caption>
+                <tr>
+                    <th>Дата</th>
+                    <th>Время</th>
+                    <th>Соперник</th>
+                    <th>Дома/В гостях</th>
+                    <th>Счет</th>
+                </tr>
+                <tr>
+                    <td>27.02.2026</td>
+                    <td>19:30</td>
+                    <td>Балтика</td>
+                    <td>Дома</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>08.03.2026</td>
+                    <td>12:00</td>
+                    <td>Оренбург</td>
+                    <td>В гостях</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>14.03.2026</td>
+                    <td>16:00</td>
+                    <td>Спартак</td>
+                    <td>Дома</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>22.03.2026</td>
+                    <td>16:00</td>
+                    <td>Динамо</td>
+                    <td>В гостях</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
