@@ -1,0 +1,30 @@
+@font-face {
+     font-family: 'ALS Ekibastuz Regular';
+     src: url("resourses/Ekibastuz-Regular.woff2") format('woff2');
+     font-weight: 500;
+}
+@font-face {  
+    font-family: 'ALS Ekibastuz Black';  
+    src: url('resourses/Ekibastuz-Black.woff2') format('woff2');  
+    font-weight: 800;  
+}
+@font-face {  
+    font-family: 'ALS Ekibastuz Heavy';  
+    src: url('resourses/Ekibastuz-Heavy.woff2') format('woff2');  
+    font-weight: 600;  
+}  
+@font-face {  
+    font-family: 'ALS Ekibastuz Bold';  
+    src: url('resourses/Ekibastuz-Bold.woff2') format('woff2');  
+    font-weight: 500;  
+}  
+@font-face {  
+    font-family: 'ALS Ekibastuz Extra Black';  
+    src: url('resourses/Ekibastuz-ExtraBlack.woff2') format('woff2');  
+    font-weight: 900;  
+}    
+@font-face {  
+    font-family: 'ALS Ekibastuz Light';  
+    src: url('resourses/Ekibastuz-Light.woff2') format('woff2');  
+    font-weight: 400;  
+}
