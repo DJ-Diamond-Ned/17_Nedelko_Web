@@ -22,6 +22,7 @@
                 color: #0d4cd3;
                 background-color: #ffffff;
                 font-size: 16px;
+                
             }
             footer{
                 background-color: #eff5f9;
@@ -46,6 +47,8 @@
                 padding-top: 5%;
                 color: #0e5ea8;
                 text-align: center;
+                justify-content: center;
+                margin: 0px auto auto 0px;
             }
             h2{
                 text-align: left;
@@ -64,6 +67,9 @@
             
             p{
                 margin: 0;
+            }
+            img{
+                height: auto;
             }
             .text2{
                 color: #e53350;
@@ -98,7 +104,8 @@
                 border-radius: 10px;
                 padding-right: 15px;
                 padding-left: 15px;
-                margin: 5px 340px 0px 0px;
+                margin: 5px 40px 0 0;
+                
             }
             .loop{
                 margin: 0px 20px 0px 20px;
@@ -140,7 +147,7 @@
             }
             .gridBlock{
                 display: grid;
-                grid-template-columns: 25% 50% 25%;
+                grid-template-columns: repeat(3,1fr);
             }
             .logo{
                 height: 40px;
@@ -159,6 +166,56 @@
                 text-align: center;
                 border: solid 1px #edf1f8;
                 text-align: left;
+            }
+            .image{
+                width: 100%;
+            }
+            @media (max-width: 400px){
+                .gridBlock{
+                    grid-template-columns: 1fr;
+                }
+            }
+            @media (max-width: 1600px) {
+                header{
+                    font-size: 14px;
+                    padding: 15px 40px;
+                }
+                .sign_in{
+                    margin: 5px 20px 0px 0px;
+                }
+               .righthead{
+                    display: flex;
+                    gap: 30px;
+                    margin: 0px 0px 11px 170px;
+                }
+                h1{
+                    padding-top: 10%;
+                    font-size: 30px;
+                    
+                }
+                .feedback_parent {
+                    display: flex;              /* ставим элементы в ряд */
+                    justify-content: space-between; /* расстояние между ними */
+                    gap: 60px;                  /* отступы между блоками */
+                }          
+                
+            }
+            @media (max-width: 400px) {
+                header{
+                    font-size: 8px;
+                    padding: 15px 40px;
+                }
+                .sign_in{
+                    margin: 5px 10px 0px 0px;
+                }
+               .righthead{
+                    display: flex;
+                    gap: 10px;
+                    margin: 0px 0px 11px 10px;
+                }
+                img{
+                    max-width: 50%;
+                }
             }
         </style>
     </head>
@@ -245,11 +302,12 @@
                         Это уровень, которого нет у 99% пользователей Рунета. Спасибо команде за эксклюзив».</p>
                 </div>
                 <div class="feedback">
-                    Сергей, 50 лет 
-                    <p>«РКН-ELITE — это единственный сервис, который дал мне реальную власть над информацией. 
-                        Я захожу на любой запрещенный ресурс (Instagram, Facebook, Twitter, YouTube), где захочу и когда захочу. 
-                        И, что важнее, я могу убрать из этих ресурсов все, что мне мешает. Стереть страницу, заблокировать канал, удалить негатив. 
-                        Плачу за подписку и чувствую себя хозяином цифрового мира. Для людей моего уровня — это необходимый инструмент».</p>
+                    ЛевРентий, 40 лет 
+                    <p>Давно не мог найти подобный сервис, и вот он наконец-то вышел! 
+                        Теперь я могу блокировать абсолютно все, прям буквально все! 
+                        Недавно заблокировал своей жене тикток, а она развелась и забрала моего единственного сына. 
+                        Теперь я должен платить ей алименты, но знаете что? Я заблокировал свою учётку в госуслугах и алименты я больше не плачу! 
+                        Спасибо авторам за такой сайт</p>
                 </div>
             </section>
         </main>
