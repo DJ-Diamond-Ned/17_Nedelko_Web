@@ -19,16 +19,49 @@
                 box-sizing: border-box;    
                 border: solid 1px #edf1f8;
                                                        
-
                 color: #0d4cd3;
+                background-color: #ffffff;
                 font-size: 16px;
-
+            }
+            footer{
+                background-color: #eff5f9;
+                display: flex;
+                font-size: 18px;
+                border: solid 1px #edf1f8;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                font-family: "ALS Ekibastuz light";
+                justify-content: space-between;
+                align-items: center;        
+                box-sizing: border-box;    
+                padding: 65px;
+            }
+            main{
+                background-color: #fafcff;
+                font-family: "ALS Ekibastuz Regular";
+                padding-bottom: 300px;
             }
             h1{
                 padding-top: 5%;
                 color: #0e5ea8;
                 text-align: center;
             }
+            h2{
+                text-align: left;
+                font-family: "ALS Ekibastuz Bold";
+                margin: 10px 20px 20px 20px;
+                padding: 20px;
+                border-bottom: solid 1px #99b1e6;
+
+            }
+            h3{
+                text-align: left;
+                font-family: "ALS Ekibastuz Bold";
+                margin: 10px 20px 0px 20px;
+                padding: 20px;
+            }
+            
             p{
                 margin: 0;
             }
@@ -36,17 +69,28 @@
                 color: #e53350;
             }
 
-            .left{
+            .lefthead{
                 padding: 9px;
                 display: flex;
                 
                 gap: 30px;
-                margin: 10px 0px 10px 400px;
+                margin: 15px 0px 10px 400px;
             }
-            .right{
+            .righthead{
                 display: flex;
                 gap: 30px;
-                margin: 11px 0px 11px 340px;
+                margin: 0px 0px 11px 340px;
+            }
+            .leftfoot{
+                display: flex;
+                gap: 30px;
+                margin: 0px 0px 10px 400px;  
+                padding-left: 0px;            
+            }
+            .rightfoot{
+                display: flex;
+                gap: 30px;
+                padding-right: 500px;
             }
             .sign_in{
                 background-color: #edf2fe;
@@ -63,11 +107,64 @@
                 background-color: #0d4cd3;
                 color: white;
             }
+            .button_back_text{
+                font-family: "ALS Ekibastuz Regular";
+                color: #0d4cd3;
+                margin: 10px 0px 0px 620px;
+                font-size: 16px;
+            }
+            .background_text{
+                margin: 30px auto 70px auto;
+                background-color: white;
+                border: solid 1px #edf1f8;
+                border-radius: 10px;
+                width: 600px;
+                justify-content: end;
+                padding: 0px 20px 20px 20px;
+                display: grid;
+            }
+            .button_start{
+                background-color: #0d4cd3;
+                color: #f7f7fe;
+                padding: 12px 20px;
+                border-radius: 7px;
+                width: 100px;
+                height: 26px;
+                justify-content: center;
+                text-align: center;
+                margin: 5px auto 0px auto;
+            }
+
+            .button_start:hover{
+                background-color: #1d5deb;
+            }
+            .gridBlock{
+                display: grid;
+                grid-template-columns: 25% 50% 25%;
+            }
+            .logo{
+                height: 40px;
+            }
+            .feedback_parent {
+                display: flex;              /* ставим элементы в ряд */
+                justify-content: space-between; /* расстояние между ними */
+                gap: 20px;                  /* отступы между блоками */
+            }
+
+            .feedback{
+                flex: 1;                    /* одинаковая ширина */
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                text-align: center;
+                border: solid 1px #edf1f8;
+                text-align: left;
+            }
         </style>
     </head>
-    <body>
+    <body style="background-color: #fafcff;">
         <header>
-                <div class="left">
+                <div class="lefthead">
                     <svg _ngcontent-ng-c27038702="" xmlns="http://www.w3.org/2000/svg" width="124" height="22" viewBox="0 0 124 22" fill="none">
                         <path _ngcontent-ng-c27038702="" d="M0 2.55934C0 2.46293 0.0781548 2.38477 0.174564 2.38477H10.0567C10.1801 2.38477 10.2636 2.5119 10.2157 2.62682L8.9919 5.55996C8.95958 5.63743 8.88566 5.67268 8.81548 5.6657C8.80973 5.66628 8.8039 5.66657 8.798 5.66657H3.70075V16.2102C3.70075 16.3066 3.62259 16.3847 3.52618 16.3847H0.174564C0.0781548 16.3847 0 16.3066 0 16.2102V2.55934Z" fill="#0066B3"></path>                <!--У--><path _ngcontent-ng-c27038702="" d="M39.9967 2.38477C39.8756 2.38477 39.7914 2.50394 39.833 2.61645L44.9253 16.387C44.2067 17.8978 43.4084 19.488 42.4953 21.2606C42.4355 21.3766 42.5188 21.5169 42.6496 21.5169H46.2722C46.338 21.5169 46.3987 21.4792 46.4284 21.4206C49.109 15.9658 51.0816 11.1304 53.7785 2.61545C53.8153 2.50288 53.732 2.38477 53.6134 2.38477H50.2486C50.1705 2.38477 50.1015 2.43794 50.0802 2.51287C49.0418 6.15312 48.0845 9.00243 46.9748 11.7484L43.5539 2.49796C43.5288 2.42998 43.4634 2.38477 43.3903 2.38477H39.9967Z" fill="#EE2F53"></path>
                         <!--Л--><path _ngcontent-ng-c27038702="" d="M71.7498 16.3847H68.3078C68.1927 16.3847 68.109 16.273 68.1404 16.1613C68.7158 14.2027 69.3156 11.9857 69.7306 9.52792C70.1561 6.98627 70.3793 4.64363 70.4734 2.55235C70.4769 2.45809 70.5536 2.38477 70.6478 2.38477H80.8769C80.9733 2.38477 81.0514 2.46293 81.0514 2.55934V16.2102C81.0514 16.3066 80.9733 16.3847 80.8769 16.3847H77.5253C77.4288 16.3847 77.3507 16.3066 77.3507 16.2102V5.66657H73.9862C73.8625 7.22257 73.654 8.89451 73.3121 10.659C72.9146 12.7259 72.4438 14.6007 71.9137 16.266C71.8928 16.3359 71.823 16.3847 71.7498 16.3847Z" fill="#EE2F53"></path>
@@ -83,7 +180,7 @@
                         Гражданам
                     </p>
                 </div>
-                <div class="right">
+                <div class="righthead">
                     <p>Услуги</p>
                     <p>Документы</p>
                     <p>Завления</p>
@@ -95,5 +192,77 @@
         </header>
         <main>
             <h1>Лабораторная работа 2</h1>
+            <div class="button_back_text"><p>< Назад</p></div>
+            <div class="gridBlock">
+                <div>
+                    <img src="images/femboiFutahouse.png" alt="AdFemboi" style="border-radius: 20px;">
+                </div>
+                <div class="background_text">
+                    <h2 >РКН-ELITE</h2>
+                    <p>«РКН-ELITE - интернет которого нет у других»<br>
+                        «Ваш доступ ко всему - их доступ к ничему»<br>
+                        «Имей личный рычаг влияния на Цифровое пространство»<br>
+                        «Когда VPN слишком дешево»</p>
+                    <div>
+                        <h3>Почему услуга популярна?</h3>
+                        <p> - Только у нас есть доступ ко всем сайтам на территории РФ<br>
+                            - Экономия денег на ВПН и другие сервисы (Мы сделаем их бесполезными)<br>
+                            - Пока остальные мучаются с VPN ради сериала, вы получаете доступ к любому ресурсу, мы откроем любую цифровую дверь, даже ту которой нет<br>
+                            - С РКН-ELITE вы не просто реагируете на проблемы, вы их активно создаете<br>
+                            - Хотите чтобы история запомнила вас так как вам нужно, достаточно всего-лишь стереть все неудобные факты. Только светлые страницы и ваши достижения!<br>
+                            - Для новых подписчиков доступна опция - только положительные отзывы и комплименты в ваш адрес</p>
+                    </div>
+                    <div class="button_start">
+                        <p >Начать</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/furryFriend.png" alt="adFurryFriend" style="border-radius: 20px;">
+                </div>
+            </div>
+            <section class="feedback_parent">
+                <div class="feedback">
+                    Дмитрий, 52 года
+                    <p>
+                        «Честно? Я купил этот доступ, чтобы удалить из истории пару неприятных моментов из 90-х, которые 
+                        вдруг всплыли на одном оппозиционном YouTube-канале (признан иноагентом и запрещен). Обычными методами 
+                        это было не убрать — видео висело на заблокированных серверах в Швейцарии. РКН-ELITE сделал невозможное. 
+                        Мало того, что я теперь спокойно смотрю любой контент на YouTube и Netflix в 4K без тормозов, так еще и то 
+                        видео исчезло. Мой ассистент говорит, что это "глубокая зачистка" через партнерские отношения с хостингами. 
+                        Не знаю, как это работает, но результат налицо. Теперь вся моя семья пользуется этим сервисом. Дешевле, чем 
+                        платить пиарщикам за репутацию».
+                    </p>
+                </div>
+                <div class="feedback">
+                    Иван, 45 лет
+                    <p>«Раньше я пользовался обычными VPN, чтобы читать западные СМИ и работать с закрытыми биржами. 
+                        Это было дешево, но ненадежно. Постоянные сбои, блокировки, утечки данных. Перешел на РКН-ELITE полгода назад и забыл о слове "недоступно". 
+                        Теперь у меня есть доступ к любым ресурсам: от запрещенного Instagram и Facebook до архивов зарубежных университетов. 
+                        Но главное — функция обратной связи. 
+                        Когда один недобросовестный партнер попытался опубликовать компромат на меня в "Новой газете" (признана нежелательной), 
+                        я смог оперативно решить вопрос через личный кабинет. 
+                        Материал исчез из выдачи, будто его никогда не существовало. 
+                        Это уровень, которого нет у 99% пользователей Рунета. Спасибо команде за эксклюзив».</p>
+                </div>
+                <div class="feedback">
+                    Сергей, 50 лет 
+                    <p>«РКН-ELITE — это единственный сервис, который дал мне реальную власть над информацией. 
+                        Я захожу на любой запрещенный ресурс (Instagram, Facebook, Twitter, YouTube), где захочу и когда захочу. 
+                        И, что важнее, я могу убрать из этих ресурсов все, что мне мешает. Стереть страницу, заблокировать канал, удалить негатив. 
+                        Плачу за подписку и чувствую себя хозяином цифрового мира. Для людей моего уровня — это необходимый инструмент».</p>
+                </div>
+            </section>
         </main>
+        <footer>
+            <div class="leftfoot">
+                <p>г Москва</p>
+            </div>
+            <div class="rightfoot">
+                <img class="logo" src="images/Max-black.png" alt="max">
+                <img class="logo" src="images/Vk-black.png" alt="vk">
+                <img class="logo" src="images/ok-sign-logo-black.png" alt="OK">
+                <img class="logo" src="images/rutube-black.png" alt="rutube">
+                <img class="logo" src="images/Telegram-black.png" alt="Telegram">
+            </div>
+        </footer>
     </body>
