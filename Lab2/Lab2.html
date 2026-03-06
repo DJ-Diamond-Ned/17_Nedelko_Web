@@ -11,16 +11,18 @@
                 left: 0px;
                 right: 0px;
                 position: fixed;
+                flex-wrap: wrap;
                 
                 font-family: "ALS Ekibastuz Regular";
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 20px 60px;        
+                padding: 20px 60px;   
+                     
                 
                 box-sizing: border-box;    
                 border: solid 1px #edf1f8;
-                                                       
+
                 color: #0d4cd3;
                 background-color: #ffffff;
                 font-size: 16px;
@@ -72,6 +74,8 @@
             }
             img{
                 height: auto;
+                display: block;
+                max-width: 100%;
             }
             .text2{
                 color: #e53350;
@@ -92,13 +96,13 @@
             .leftfoot{
                 display: flex;
                 gap: 30px;
-                margin: 0px 0px 10px 400px;  
+                margin: 0px 0px 10px 30%;  
                 padding-left: 0px;            
             }
             .rightfoot{
                 display: flex;
                 gap: 30px;
-                padding-right: 500px;
+                padding-right: 30%;
             }
             .sign_in{
                 background-color: #edf2fe;
@@ -119,7 +123,7 @@
             .button_back_text{
                 font-family: "ALS Ekibastuz Regular";
                 color: #0d4cd3;
-                margin: 10px 0px 0px 620px;
+                margin: 10px 0px 0px 30%;
                 font-size: 16px;
             }
             .background_text{
@@ -135,9 +139,10 @@
             .button_start{
                 background-color: #0d4cd3;
                 color: #f7f7fe;
-                padding: 12px 20px;
+                padding: 3% 5%;
                 border-radius: 7px;
-                width: 100px;
+                width: 15%;
+
                 height: 26px;
                 justify-content: center;
                 text-align: center;
@@ -155,13 +160,15 @@
                 height: 40px;
             }
             .feedback_parent {
-                display: flex;              /* ставим элементы в ряд */
-                justify-content: space-between; /* расстояние между ними */
-                gap: 20px;                  /* отступы между блоками */
+                display: flex;            
+                justify-content: space-between;
+                gap: 20px;                  
             }
-
+            .ad{
+                width: 100%;
+            }
             .feedback{
-                flex: 1;                    /* одинаковая ширина */
+                flex: 1;                 
                 padding: 20px;
                 background-color: #ffffff;
                 border-radius: 10px;
@@ -169,18 +176,17 @@
                 border: solid 1px #edf1f8;
                 text-align: left;
             }
-            .image{
-                width: 100%;
-                height: auto;
-            }
             .container{
-                max-width: 1200px;   /* ограничиваем ширину */
-                margin: 0 auto;       /* центрируем по горизонтали */
-                padding: 0 20px;      /* отступы слева/справа */
+                max-width: 1200px;  
+                margin: 0 auto;     
+                padding: 0 20px;    
             }
             @media (max-width: 400px){
                 .gridBlock{
                     grid-template-columns: repeat(3, 1fr);
+                }
+                .leftfoot{
+                margin: 0px 0px 10px 10%;          
                 }
             }
             @media (max-width: 1600px) {
@@ -199,13 +205,16 @@
                     font-size: 28px;
                 }
                 .feedback_parent {
-                    display: flex;              /* ставим элементы в ряд */
-                    justify-content: space-between; /* расстояние между ними */
-                    gap: 60px;                  /* отступы между блоками */
+                    display: flex;             
+                    justify-content: space-between;
+                    gap: 60px;                  
                 }          
                 .background_text{
                     width: 300px;
                     font-size: 10px;
+                }
+                .leftfoot{
+                margin: 0px 0px 10px 20%;          
                 }
             }
             @media (max-width:1200px){
@@ -217,9 +226,7 @@
             h1 {
                 font-size: 24px;
             }
-            .logo {
-                width: 90px;
-            }
+            
             }
             @media (max-width: 400px) {
                 header{
@@ -236,6 +243,9 @@
                 }
                 img{
                     max-width: 50%;
+                }
+                .logo{
+                    width: 10px;
                 }
             }
         </style>
@@ -272,7 +282,7 @@
             
             <div class="button_back_text"><p>< Назад</p></div>
             <div class="gridBlock">
-                <div>
+                <div class="ad">
                     <img src="images/femboiFutahouse.png" alt="AdFemboi" style="border-radius: 20px;">
                 </div>
                 <section class="background_text">
