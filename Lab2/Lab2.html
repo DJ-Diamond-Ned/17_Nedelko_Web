@@ -10,18 +10,21 @@
                 top: 0px;
                 left: 0px;
                 right: 0px;
-
                 position: fixed;
+                
                 font-family: "ALS Ekibastuz Regular";
                 display: flex;
                 justify-content: space-between;
-                align-items: center;        
+                align-items: center;
+                padding: 20px 60px;        
+                
                 box-sizing: border-box;    
                 border: solid 1px #edf1f8;
                                                        
                 color: #0d4cd3;
                 background-color: #ffffff;
                 font-size: 16px;
+                z-index: 1000;
                 
             }
             footer{
@@ -41,14 +44,13 @@
             main{
                 background-color: #fafcff;
                 font-family: "ALS Ekibastuz Regular";
-                padding-bottom: 300px;
+                margin-top: 100px;  /* = высота header */
             }
             h1{
                 padding-top: 5%;
                 color: #0e5ea8;
                 text-align: center;
-                justify-content: center;
-                margin: 0px auto auto 0px;
+                margin: 0;
             }
             h2{
                 text-align: left;
@@ -169,19 +171,24 @@
             }
             .image{
                 width: 100%;
+                height: auto;
+            }
+            .container{
+                max-width: 1200px;   /* ограничиваем ширину */
+                margin: 0 auto;       /* центрируем по горизонтали */
+                padding: 0 20px;      /* отступы слева/справа */
             }
             @media (max-width: 400px){
                 .gridBlock{
-                    grid-template-columns: 1fr;
+                    grid-template-columns: repeat(3, 1fr);
                 }
             }
             @media (max-width: 1600px) {
                 header{
-                    font-size: 14px;
                     padding: 15px 40px;
                 }
                 .sign_in{
-                    margin: 5px 20px 0px 0px;
+                    padding: 8px 12px;
                 }
                .righthead{
                     display: flex;
@@ -189,16 +196,30 @@
                     margin: 0px 0px 11px 170px;
                 }
                 h1{
-                    padding-top: 10%;
-                    font-size: 30px;
-                    
+                    font-size: 28px;
                 }
                 .feedback_parent {
                     display: flex;              /* ставим элементы в ряд */
                     justify-content: space-between; /* расстояние между ними */
                     gap: 60px;                  /* отступы между блоками */
                 }          
-                
+                .background_text{
+                    width: 300px;
+                    font-size: 10px;
+                }
+            }
+            @media (max-width:1200px){
+            header {
+                padding: 10px 20px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .logo {
+                width: 90px;
+            }
             }
             @media (max-width: 400px) {
                 header{
@@ -244,11 +265,11 @@
                     <p>Платежи</p>
                     <p>Помощь</p>
                 </div>
-                <div class="loop"><img src="images/Loop.png" alt="loop"></div>
                 <div><p class="sign_in">Войти</p></div>
         </header>
         <main>
-            <h1>Лабораторная работа 2</h1>
+            <div class="container"><h1>Лабораторная работа 2</h1></div>
+            
             <div class="button_back_text"><p>< Назад</p></div>
             <div class="gridBlock">
                 <div>
