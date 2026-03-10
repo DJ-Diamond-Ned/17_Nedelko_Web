@@ -11,7 +11,7 @@
                 left: 0px;
                 right: 0px;
                 position: fixed;
-                flex-wrap: wrap;
+ 
                 
                 font-family: "ALS Ekibastuz Regular";
                 display: flex;
@@ -181,14 +181,7 @@
                 margin: 0 auto;     
                 padding: 0 20px;    
             }
-            @media (max-width: 400px){
-                .gridBlock{
-                    grid-template-columns: repeat(3, 1fr);
-                }
-                .leftfoot{
-                margin: 0px 0px 10px 10%;          
-                }
-            }
+
             @media (max-width: 1600px) {
                 header{
                     padding: 15px 40px;
@@ -214,19 +207,44 @@
                     font-size: 10px;
                 }
                 .leftfoot{
-                margin: 0px 0px 10px 20%;          
+                    margin: 0px 0px 10px 20%;          
+                }
+                .rightfoot{
+                    gap: 30px;
+                    padding-right: 10%;
+                }
+                img{
+                    max-width: 80%;
+                }
+            }
+            @media(max-width: 1500px){
+                .righthead{
+                    text-align: left;
+                    font-size: 13px;
+                }
+                .sign_in{
+                    padding: 8px 12px;
+                    font-size: 13px;
+                }
+                .lefthead{
+                    margin: 15px 0px 10px 200px;
+                }
+                .button_back_text{
+                    font-size: 12px;
                 }
             }
             @media (max-width:1200px){
-            header {
-                padding: 10px 20px;
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-            h1 {
-                font-size: 24px;
-            }
-            
+                header {
+                    padding: 10px 20px;
+                    flex-wrap: nowrap;
+                    gap: 10px;
+                }
+                .lefthead{
+                    margin: 15px 0px 10px 50px;
+                }
+                h1 {
+                    font-size: 24px;
+                }
             }
             @media (max-width: 400px) {
                 header{
@@ -246,6 +264,12 @@
                 }
                 .logo{
                     width: 10px;
+                }
+                .gridBlock{
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                .leftfoot{
+                margin: 0px 0px 10px 10%;          
                 }
             }
         </style>
