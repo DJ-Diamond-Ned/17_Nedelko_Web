@@ -2,6 +2,7 @@
 <html lang="my">
 
     <head>
+        <script src="js/index.js"></script>
         <meta charset="UTF-8">
         <title>Anime!!!</title>
         <style>
@@ -135,6 +136,16 @@
             .quotes_up{
                 margin-left: 20px;
             }
+            .buttonStartGame{
+                padding: 10px;
+                background-color:#ce0101;
+                border-radius: 10px;
+                color: white;
+                border: solid 0 ;
+            }
+            .buttonStartGame:hover{
+                background-color:#ff0000;
+            }
             .quotes_down{
                 font-size: 20px;
                 font-weight: bold;
@@ -224,6 +235,9 @@
                 </audio>
             </section>
             <span>
+            <section style="text-align: center; padding: 20px;">
+                <button onclick="startGame()" class="buttonStartGame">Начать игру</button>
+            </section>
                 <p class = "blocktext">
                     Ниже представлено описание, отзыв и цитаты последнего просмотренного контента
                 </p>
