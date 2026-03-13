@@ -12,7 +12,84 @@
                 margin: 0;
                 padding: 0;
             }
+            .container {
+                max-width: 800px;
+                margin: 40px auto;
+                padding: 0 20px;
+                }
 
+                h1, h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                }
+
+                /* Лента отзывов */
+                .feedback_parent {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-bottom: 40px;
+                }
+
+                .feedback {
+                background: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+                transition: transform 0.2s;
+                }
+
+                .feedback:hover {
+                transform: translateY(-3px);
+                }
+
+                .feedback h4 {
+                margin-bottom: 10px;
+                color: #2c3e50;
+                }
+
+                .feedback p {
+                line-height: 1.5;
+                }
+
+                /* Форма */
+                .form-container {
+                background: #fff;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+                }
+
+                .form-container input,
+                .form-container textarea {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 14px;
+                }
+
+                .form-container button {
+                padding: 12px 20px;
+                background: #3498db;
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background 0.2s;
+                }
+
+                .form-container button:hover {
+                background: #2980b9;
+                }
+
+                .error {
+                color: red;
+                margin-top: 10px;
+                text-align: center;
+                }
             body {
                 margin: 0;
             }
@@ -360,39 +437,21 @@
                     <img src="images/furryFriend.png" alt="adFurryFriend" style="border-radius: 20px;">
                 </div>
             </article>
-            <section class="feedback_parent">
-                <div class="feedback">
-                    Дмитрий, 52 года
-                    <p>
-                        «Честно? Я купил этот доступ, чтобы удалить из истории пару неприятных моментов из 90-х, которые 
-                        вдруг всплыли на одном оппозиционном YouTube-канале (признан иноагентом и запрещен). Обычными методами 
-                        это было не убрать — видео висело на заблокированных серверах в Швейцарии. РКН-ELITE сделал невозможное. 
-                        Мало того, что я теперь спокойно смотрю любой контент на YouTube и Netflix в 4K без тормозов, так еще и то 
-                        видео исчезло. Мой ассистент говорит, что это "глубокая зачистка" через партнерские отношения с хостингами. 
-                        Не знаю, как это работает, но результат налицо. Теперь вся моя семья пользуется этим сервисом. Дешевле, чем 
-                        платить пиарщикам за репутацию».
-                    </p>
+            <div class="container">
+                <h2>Отзывы наших пользователей</h2>
+                <!-- Лента отзывов -->
+                <section class="feedback_parent" id="reviews"></section>
+                <!-- Форма добавления -->
+                <div class="form-container">
+                    <h2>Оставить отзыв</h2>
+                    <form id="reviewForm">
+                        <input type="text" id="name" placeholder="Ваше имя" required>
+                        <textarea id="text" placeholder="Ваш отзыв" required></textarea>
+                        <button type="submit">Добавить отзыв</button>
+                    </form>
+                    <p id="error" class="error"></p>
                 </div>
-                <div class="feedback">
-                    Иван, 45 лет
-                    <p>«Раньше я пользовался обычными VPN, чтобы читать западные СМИ и работать с закрытыми биржами. 
-                        Это было дешево, но ненадежно. Постоянные сбои, блокировки, утечки данных. Перешел на РКН-ELITE полгода назад и забыл о слове "недоступно". 
-                        Теперь у меня есть доступ к любым ресурсам: от запрещенного Instagram и Facebook до архивов зарубежных университетов. 
-                        Но главное — функция обратной связи. 
-                        Когда один недобросовестный партнер попытался опубликовать компромат на меня в "Новой газете" (признана нежелательной), 
-                        я смог оперативно решить вопрос через личный кабинет. 
-                        Материал исчез из выдачи, будто его никогда не существовало. 
-                        Это уровень, которого нет у 99% пользователей Рунета. Спасибо команде за эксклюзив».</p>
-                </div>
-                <div class="feedback">
-                    ЛевРентий, 40 лет 
-                    <p>Давно не мог найти подобный сервис, и вот он наконец-то вышел! 
-                        Теперь я могу блокировать абсолютно все, прям буквально все! 
-                        Недавно заблокировал своей жене тикток, а она развелась и забрала моего единственного сына. 
-                        Теперь я должен платить ей алименты, но знаете что? Я заблокировал свою учётку в госуслугах и алименты я больше не плачу! 
-                        Спасибо авторам за такой сайт</p>
-                </div>
-            </section>
+            </div>
         </main>
         <footer>
             <div class="leftfoot">
