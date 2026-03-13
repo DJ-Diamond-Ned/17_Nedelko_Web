@@ -27,7 +27,7 @@
                 color: #d0d1d3;
             }
             .dark-theme .background_text{
-                background-color: rgb(126, 111, 111);;
+                background-color: rgb(126, 111, 111);
             }
             .dark-theme .button_start{
                 background-color: rgb(94, 83, 83);
@@ -42,4 +42,13 @@
             .dark-theme footer{
                 background-color: rgb(69, 64, 64);
                 color: wheat;
+            }
+            .dark-theme .form-container{
+                background-color: rgb(126, 111, 111);;
+            }
+            .dark-theme .review{
+                background-color: #f5dcc1;
+            }
+            .dark-theme .buttonSubmit{
+                background-color: rgb(152, 135, 135);
             }

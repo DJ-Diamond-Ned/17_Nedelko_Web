@@ -278,7 +278,12 @@
             .buttonStartGame:hover{
                 background-color:#1d5deb;
             }
-            
+            .review{
+                background-color: #ffffff;
+            }
+            .buttonSubmit{
+                background-color: #0d4cd3;
+            }
             @media (max-width: 1600px) {
                 header{
                     padding: 15px 40px;
@@ -445,9 +450,9 @@
                 <div class="form-container">
                     <h2>Оставить отзыв</h2>
                     <form id="reviewForm">
-                        <input type="text" id="name" placeholder="Ваше имя" required>
-                        <textarea id="text" placeholder="Ваш отзыв" required></textarea>
-                        <button type="submit">Добавить отзыв</button>
+                        <input class="review"  type="text" id="name" placeholder="Ваше имя" required>
+                        <textarea class="review"  id="text" placeholder="Ваш отзыв" required></textarea>
+                        <button class = "buttonSubmit" type="submit">Добавить отзыв</button>
                     </form>
                     <p id="error" class="error"></p>
                 </div>
