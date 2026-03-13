@@ -2,6 +2,7 @@
 <html lang="my">
 
     <head>
+        <script src="js/index.js"></script>
         <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <title>AD</title>
@@ -181,7 +182,16 @@
                 margin: 0 auto;     
                 padding: 0 20px;    
             }
-
+            .buttonStartGame{
+                padding: 10px;
+                background-color:#0d4cd3;
+                border-radius: 10px;
+                color: white;
+                border: solid 0 ;
+            }
+            .buttonStartGame:hover{
+                background-color:#1d5deb;
+            }
             @media (max-width: 1600px) {
                 header{
                     padding: 15px 40px;
@@ -274,6 +284,8 @@
                 .leftfoot{
                 margin: 0 0 10px 10%;          
                 }
+
+
             }
         </style>
     </head>
@@ -335,6 +347,10 @@
                     <img src="images/furryFriend.png" alt="adFurryFriend" style="border-radius: 20px;">
                 </div>
             </article>
+            <section style="text-align: center; padding: 20px;">
+                <button onclick="startGame()" class="buttonStartGame">Начать игру</button>
+            </section>
+            
             <section class="feedback_parent">
                 <div class="feedback">
                     Дмитрий, 52 года
