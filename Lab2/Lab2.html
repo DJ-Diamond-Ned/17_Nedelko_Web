@@ -2,7 +2,6 @@
 <html lang="my">
 
     <head>
-        <script src="js/index.js"></script>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="styles/dark-theme.css">
         <meta charset="UTF-8">
@@ -12,101 +11,42 @@
                 margin: 0;
                 padding: 0;
             }
-            .container {
-                max-width: 800px;
-                margin: 40px auto;
-                padding: 0 20px;
-                }
 
-                h1, h2 {
+            h1, h2 {
                 text-align: center;
                 margin-bottom: 20px;
-                }
+            }
 
-                /* Лента отзывов */
-                .feedback_parent {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-                margin-bottom: 40px;
-                }
-
-                .feedback {
-                background: #fff;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-                transition: transform 0.2s;
-                }
-
-                .feedback:hover {
-                transform: translateY(-3px);
-                }
-
-                .feedback h4 {
+            .feedback h4 {
                 margin-bottom: 10px;
-                color: #2c3e50;
-                }
+            }
 
-                .feedback p {
+            .feedback p {
                 line-height: 1.5;
-                }
+            }
 
-                /* Форма */
-                .form-container {
-                background: #fff;
-                padding: 25px;
-                border-radius: 10px;
-                box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-                }
-
-                .form-container input,
-                .form-container textarea {
-                width: 100%;
-                padding: 12px;
-                margin-bottom: 15px;
-                border: 1px solid #ccc;
-                border-radius: 8px;
-                font-size: 14px;
-                }
-
-                .form-container button {
-                padding: 12px 20px;
-                background: #3498db;
-                color: #fff;
-                border: none;
-                border-radius: 8px;
-                font-size: 16px;
-                cursor: pointer;
-                transition: background 0.2s;
-                }
-
-                .form-container button:hover {
-                background: #2980b9;
-                }
-
-                .error {
+            .error {
                 color: red;
                 margin-top: 10px;
                 text-align: center;
-                }
+            }
+
             body {
                 margin: 0;
             }
+
             header{
                 top: 0;
                 left: 0;
                 right: 0;
                 position: fixed;
  
-                
                 font-family: "ALS Ekibastuz Regular", sans-serif;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px 60px;   
                      
-                
                 box-sizing: border-box;    
                 border: solid 1px #edf1f8;
 
@@ -114,8 +54,8 @@
                 background-color: #ffffff;
                 font-size: 16px;
                 z-index: 1000;
-                
             }
+
             footer{
                 background-color: #eff5f9;
                 display: flex;
@@ -130,17 +70,20 @@
                 box-sizing: border-box;    
                 padding: 65px;
             }
+            
             main{
                 background-color: #fafcff;
                 font-family: "ALS Ekibastuz Regular", sans-serif;
-                margin-top: 100px;  /* = высота header */
+                padding-top: 100px;
             }
+
             h1{
                 padding-top: 5%;
                 color: #0e5ea8;
                 text-align: center;
                 margin: 0;
             }
+
             h2{
                 text-align: left;
                 font-family: "ALS Ekibastuz Bold", sans-serif;
@@ -149,6 +92,7 @@
                 border-bottom: solid 1px #99b1e6;
 
             }
+
             h3{
                 text-align: left;
                 font-family: "ALS Ekibastuz Bold", sans-serif;
@@ -159,10 +103,9 @@
             p{
                 margin: 0;
             }
-            img{
-                height: auto;
-                display: block;
-                max-width: 100%;
+            img.logo {
+                width: auto;
+                max-width: 50px;
             }
             .text2{
                 color: #e53350;
@@ -246,6 +189,80 @@
             .logo{
                 height: 40px;
             }
+            #reviews {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            .feedback {
+                flex: 1;
+                padding: 20px;
+                background: #ffffff;
+                border-radius: 10px;
+                border: 1px solid #edf1f8;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                text-align: left;
+                transition: transform 0.2s;
+            }
+
+            .feedback:hover {
+                transform: translateY(-3px);
+            }
+
+            .feedback h4 {
+                margin: 0 0 8px 0;
+                font-size: 18px;
+                
+            }
+
+            .feedback p {
+                margin: 0;
+                line-height: 1.5;
+            }
+
+            #reviewForm {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin-top: 30px;
+                max-width: 500px;
+            }
+
+            #reviewForm input,
+            #reviewForm textarea {
+                padding: 10px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                font-size: 14px;
+                font-family: inherit;
+            }
+
+            #reviewForm textarea {
+                resize: vertical;
+                min-height: 80px;
+            }
+
+            #reviewForm button {
+                padding: 10px;
+                border: none;
+                border-radius: 6px;
+                background: #2f80ed;
+                color: white;
+                font-size: 15px;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+
+            #reviewForm button:hover {
+                background: #1c60b8;
+            }
+
+            #error {
+                color: red;
+                font-size: 14px;
+            }
             .feedback_parent {
                 display: flex;            
                 justify-content: space-between;
@@ -254,15 +271,7 @@
             .ad{
                 width: 100%;
             }
-            .feedback{
-                flex: 1;                 
-                padding: 20px;
-                background-color: #ffffff;
-                border-radius: 10px;
-                text-align: center;
-                border: solid 1px #edf1f8;
-                text-align: left;
-            }
+
             .container{
                 max-width: 1200px;  
                 margin: 0 auto;     
@@ -278,12 +287,7 @@
             .buttonStartGame:hover{
                 background-color:#1d5deb;
             }
-            .review{
-                background-color: #ffffff;
-            }
-            .buttonSubmit{
-                background-color: #0d4cd3;
-            }
+
             @media (max-width: 1600px) {
                 header{
                     padding: 15px 40px;
@@ -328,9 +332,6 @@
                     padding: 8px 12px;
                     font-size: 13px;
                 }
-                .lefthead{
-                    margin: 15px 0 10px 200px;
-                }
                 .button_back_text{
                     font-size: 12px;
                 }
@@ -351,6 +352,13 @@
                     font-size: 11px;
                 }
             }
+            @media(max-width: 600px){
+                footer{
+                    flex-direction: column;
+                    padding: 20px;
+                    gap: 15px;
+                }
+}
             @media (max-width: 400px) {
                 header{
                     font-size: 8px;
@@ -376,8 +384,6 @@
                 .leftfoot{
                 margin: 0 0 10px 10%;          
                 }
-
-
             }
         </style>
     </head>
@@ -444,16 +450,16 @@
             </article>
             <div class="container">
                 <h2>Отзывы наших пользователей</h2>
-                <!-- Лента отзывов -->
-                <section class="feedback_parent" id="reviews"></section>
-                <!-- Форма добавления -->
-                <div class="form-container">
-                    <h2>Оставить отзыв</h2>
-                    <form id="reviewForm">
-                        <input class="review"  type="text" id="name" placeholder="Ваше имя" required>
-                        <textarea class="review"  id="text" placeholder="Ваш отзыв" required></textarea>
-                        <button class = "buttonSubmit" type="submit">Добавить отзыв</button>
-                    </form>
+                <section class="feedback_parent">
+                    <div id="reviews"></div>
+                </section>
+                <form id="reviewForm">
+                    <input type="text" id="name" placeholder="Ваше имя">
+                    <textarea id="text" placeholder="Ваш отзыв"></textarea>
+                    <button type="submit">Отправить</button>
+                    <p id="error" class="error"></p>
+                </form>
+                <script src="js/index.js"></script>
                     <p id="error" class="error"></p>
                 </div>
             </div>

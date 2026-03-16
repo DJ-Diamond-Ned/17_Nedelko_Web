@@ -52,3 +52,15 @@
             .dark-theme .buttonSubmit{
                 background-color: rgb(152, 135, 135);
             }
+            .dark-theme .feedback_parent{
+                color: #d5d7e0;
+            }
+            .dark-theme h4{
+                color: #d5d7e0;
+            }
+            .dark-theme #reviewForm button{
+                background: rgb(152, 135, 135);
+            }
+            .dark-theme #reviewForm button:hover {
+                background: rgb(170, 162, 162);
+            }
