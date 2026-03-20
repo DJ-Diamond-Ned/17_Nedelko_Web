@@ -8,8 +8,8 @@ const reviews = [
     text: "Честно? Я купил этот доступ, чтобы удалить из истории пару неприятных моментов из 90-х..."
   },
   {
-    name: "Иван, 45 лет",
-    text: "Раньше я пользовался обычными VPN, чтобы читать западные СМИ..."
+    name: "Джонни Сильверхенд, ## лет",
+    text: "Арасака пососала, благодаря РКН ELITE  "
   },
   {
     name: "ЛевРентий, 40 лет",
@@ -21,26 +21,27 @@ const container = document.getElementById("reviews");
 const form = document.getElementById("reviewForm");
 const error = document.getElementById("error");
 
-// Функция отображения отзывов
 function renderReviews() {
+
   container.innerHTML = "";
-  reviews.forEach(review => {
+
+  for (let review of reviews) {
+
     const div = document.createElement("div");
-    div.classList.add("feedback");
+    div.className = "feedback";
+
     div.innerHTML = `
       <h4>${review.name}</h4>
       <p>${review.text}</p>
     `;
+
     container.appendChild(div);
-  });
+  }
 }
 
-// Первичная отрисовка отзывов
-renderReviews();
+function sendReview(event) {
 
-// Обработка отправки формы
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
+  event.preventDefault();
 
   const name = document.getElementById("name").value.trim();
   const text = document.getElementById("text").value.trim();
@@ -57,7 +58,14 @@ form.addEventListener("submit", function(e) {
     return;
   }
 
-  reviews.push({ name, text });
+  // добавляем отзыв в начало массива
+  reviews.unshift({ name, text });
+
   renderReviews();
+
   form.reset();
-});
+}
+
+form.addEventListener("submit", sendReview);
+
+renderReviews();
