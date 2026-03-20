@@ -5,7 +5,6 @@ body {
     background-image: url("../resourses/backgroundback.jpg");
 }
 
-/* Шапка */
 header {
     background: #5a3e1b;
     color: white;
@@ -14,7 +13,7 @@ header {
     background-image: url("../resourses/header_baclground.jpg");
     background-position: center; 
     background-repeat: no-repeat;
-     background-size: cover;     
+    background-size: cover;     
 
 }
 
@@ -31,7 +30,6 @@ button:hover {
     background: #6b4226;
 }
 
-/* Контейнер */
 #app {
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +37,6 @@ button:hover {
     padding: 20px;
 }
 
-/* Карточка (плакат) */
 .card {
     width: 280px;
     background-image: url("../resourses/background.jpg");
@@ -49,19 +46,17 @@ button:hover {
     text-align: center;
     box-shadow: 8px 8px 15px rgba(0,0,0,0.5);
     position: relative; 
-    background-size: cover;       /* растянуть */
-    background-position: center;  /* центрировать */
-    background-repeat: no-repeat; /* не повторять */   
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
 }
 
-/* Заголовок WANTED */
 .card h1 {
     margin: 5px 0;
     font-size: 28px;
     letter-spacing: 2px;
 }
 
-/* Фото */
 .card img {
     width: 100%;
     height: 300px;
@@ -69,24 +64,20 @@ button:hover {
     border: 3px solid #5a3e1b;
 }
 
-/* Имя */
 .card h2 {
     margin: 10px 0;
 }
 
-/* Текст */
 .card p {
     margin: 5px 0;
 }
 
-/* Награда */
 .reward {
     margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Кнопка редактирования */
 .edit-btn {
     margin-top: 10px;
     background: #a52a2a;

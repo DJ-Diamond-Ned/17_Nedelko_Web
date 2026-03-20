@@ -1,7 +1,5 @@
-/* ================= РЕЖИМ РЕДАКТИРОВАНИЯ ================= */
 let editMode = false;
 
-/* ================= БАЗОВЫЙ КЛАСС ================= */
 class Card {
     constructor(image, title, aura) {
         this.image = image;
@@ -14,7 +12,6 @@ class Card {
     }
 }
 
-/* ================= КЛАСС ПРЕПОДАВАТЕЛЬ ================= */
 class TeacherCard extends Card {
     constructor(image, name, age, aura, exp, loyalty, subject, danger, quality ) {
         super(image, name, aura);
@@ -50,30 +47,29 @@ class TeacherCard extends Card {
         `;
     }
 
-    /* ===== МЕТОДЫ ===== */
 
-    провестиКонтрольную() {
+    conductControl() {
         console.log(`${this.title} проводит контрольную`);
     }
 
-    проверитьКонтрольную() {
+    
+    checkControl() {
         console.log(`${this.title} проверяет контрольную`);
     }
 
-    поставитьАвтомат() {
+    setScore() {
         console.log(`${this.title} поставил автомат`);
     }
 
-    завалитьНаЗачете() {
+    failTest() {
         console.log(`${this.title} завалил на зачёте`);
     }
 
-    вытянутьНаЗачете() {
+    helpAssessment() {
         console.log(`${this.title} вытянул на зачёте`);
     }
 }
 
-/* ================= ДАННЫЕ ================= */
 const cards = [
     new TeacherCard(
         "resourses/sidorenko.jpg",
@@ -90,7 +86,7 @@ const cards = [
     new TeacherCard(
         "resourses/lebedev.jpg",
         "Лебедев Д.А.",
-        "##",
+        30,
         "∞",
         90,
         70,
@@ -112,6 +108,18 @@ const cards = [
     ),
 
     new TeacherCard(
+        "resourses/nedelko.jpg",
+        "Неделько Д.О.",
+        19,
+        100,
+        100,
+        100,
+        "Студент РХТУ",
+        "Достаточно опасный",
+        10000
+    ),
+
+    new TeacherCard(
         "resourses/ovchinnikov.jpg",
         "Овчинников Л.Д.",
         19,
@@ -121,6 +129,30 @@ const cards = [
         "Студент Политеха",
         "Не то что бы опасен",
         "Пачка сухариков"
+    ),
+
+    new TeacherCard(
+        "resourses/kirillovM.jpg",
+        "Бледный К.А.",
+        9,
+        40,
+        8,
+        "2к15",
+        "Студент РХТУ",
+        "ааээа",
+        "10000"
+    ),
+
+    new TeacherCard(
+        "resourses/kumanyaeva.jpg",
+        "Куманяева Т.А.",
+        19,
+        228,
+        "Социально недоразвита",
+        100,
+        "Студент РХТУ",
+        "Голландский штурвал",
+        "1 чизбургер и флеш золотой"
     ),
 
     new TeacherCard(
@@ -171,20 +203,10 @@ const cards = [
         10000
     ),
 
-    new TeacherCard(
-        "resourses/ustinov.jpg",
-        "Куманяева Т.А.",
-        19,
-        100,
-        100,
-        100,
-        "Студент РХТУ",
-        "Полтора метра",
-        10000
-    ),
+    
+    
 ];
 
-/* ================= ФУНКЦИЯ СБОРКИ СТРАНИЦЫ ================= */
 function renderPage() {
     const app = document.getElementById("app");
     app.innerHTML = "";
@@ -194,13 +216,11 @@ function renderPage() {
     });
 }
 
-/* ================= РЕЖИМ РЕДАКТИРОВАНИЯ ================= */
 function toggleEdit() {
     editMode = !editMode;
     renderPage();
 }
 
-/* ================= РЕДАКТИРОВАНИЕ КАРТОЧКИ ================= */
 function editCard(index) {
     let newName = prompt("Введите ФИО:", cards[index].title);
     let newAura = prompt("Введите ауру (0-100):", cards[index].aura);
@@ -211,5 +231,5 @@ function editCard(index) {
     renderPage();
 }
 
-/* ================= ЗАПУСК ================= */
+
 renderPage();
