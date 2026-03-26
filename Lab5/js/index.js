@@ -221,12 +221,83 @@ function toggleEdit() {
     renderPage();
 }
 
-function editCard(index) {
-    let newName = prompt("Введите ФИО:", cards[index].title);
-    let newAura = prompt("Введите ауру (0-100):", cards[index].aura);
+function validateStringInput(message, defaultValue) {
+    let value;
+    let correct = false;
 
-    if (newName !== null) cards[index].title = newName;
-    if (newAura !== null) cards[index].aura = Number(newAura);
+    while (!correct) {
+        value = prompt(message, defaultValue);
+
+        if (value === null) return null;
+
+        if (value.trim() === "") {
+            alert("Строка не может быть пустой!");
+        } else {
+            correct = true;
+        }
+    }
+
+    return value;
+}
+
+function validateNumberInput(message, defaultValue, min, max) {
+    let value;
+    let correct = false;
+
+    while (!correct) {
+        value = prompt(message, defaultValue);
+
+        if (value === null) return null;
+
+        value = Number(value);
+
+        if (isNaN(value)) {
+            alert("Введите число!");
+        } else if (value < min || value > max) {
+            alert(`Число должно быть от ${min} до ${max}`);
+        } else {
+            correct = true;
+        }
+    }
+
+    return value;
+}
+function editCard(index) {
+    const card = cards[index];
+
+    let newName = validateStringInput("Введите ФИО:", card.title);
+    if (newName === null) return;
+
+    let newAge = validateNumberInput("Введите возраст:", card.age, 0, 120);
+    if (newAge === null) return;
+
+    let newAura = validateNumberInput("Введите ауру (0-100):", card.aura, 0, 100);
+    if (newAura === null) return;
+
+    let newExp = validateNumberInput("Введите опыт (0-100):", card.exp, 0, 100);
+    if (newExp === null) return;
+
+    let newLoyalty = validateNumberInput("Введите лояльность (0-100):", card.loyalty, 0, 100);
+    if (newLoyalty === null) return;
+
+    let newSubject = validateStringInput("Введите предмет:", card.subject);
+    if (newSubject === null) return;
+
+    let newDanger = validateStringInput("Введите опасность:", card.danger);
+    if (newDanger === null) return;
+
+    let newQuality = validateStringInput("Введите награду:", card.quality);
+    if (newQuality === null) return;
+
+    // ===== ПРИМЕНЯЕМ =====
+    card.title = newName;
+    card.age = newAge;
+    card.aura = newAura;
+    card.exp = newExp;
+    card.loyalty = newLoyalty;
+    card.subject = newSubject;
+    card.danger = newDanger;
+    card.quality = newQuality;
 
     renderPage();
 }
