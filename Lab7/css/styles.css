@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Press Start 2P";
+    background: rgb(30, 27, 32);
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid rgb(168, 0, 156);
+    gap: 5%;
+    background: rgb(30, 27, 32);
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px;
+    border-top: 1px solid rgb(168, 0, 156);
+    background: rgb(30, 27, 32);
+}
+
+.header_button{
+    padding: 10px;
+    margin: 3%;
+    background: rgb(67, 64, 69);
+    color: rgb(188, 3, 255);
+    box-shadow: 0px 0px 10px rgb(168, 0, 156);
+    flex: 1;
+    border: solid 1px rgb(211, 136, 239);
+    border-radius: 10px;
+    font-family: "Press Start 2P";
+}
+
+.header_button:hover{
+    background: rgb(114, 109, 117);
+    color: rgb(79, 0, 108);
+}
+
+.footer_block{
+    margin: 1%;
+    background: rgb(67, 64, 69);
+    color: rgb(205, 75, 253);
+    box-shadow: 0px 0px 10px rgb(168, 0, 156);
+    flex: 1;
+    border: solid 1px rgb(211, 136, 239);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.input-city {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+    min-width: 200px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.card h3 {
+    margin-top: 0;
+}
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.cityInput {
+    padding: 10px;
+    margin: 3%;
+    background: rgb(40, 37, 42);
+    color: #fff;
+    box-shadow: 0px 0px 10px rgb(168, 0, 156);
+    border: solid 1px rgb(211, 136, 239);
+    border-radius: 10px;
+    font-family: "Press Start 2P";
+    font-size: 10px;
+    flex: 1;
+    outline: none;
+}
+
+#output {
+    margin: 20px auto 100px auto; /* 100px снизу, чтобы не перекрывал футер */
+    width: 80%;
+    color: white;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.card {
+    background: rgb(67, 64, 69);
+    border: 2px solid rgb(168, 0, 156);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(168, 0, 156);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 136, 239);
+}
+
+.loading {
+    text-align: center;
+    color: rgb(211, 136, 239);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
