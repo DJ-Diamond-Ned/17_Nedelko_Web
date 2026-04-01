@@ -24,6 +24,9 @@ footer{
     background: rgb(30, 27, 32);
 }
 
+h2{
+    color:rgb(207, 104, 245);
+}
 .header_button{
     padding: 10px;
     margin: 3%;

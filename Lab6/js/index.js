@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await response.json();
             output.innerHTML = `
                 <div class="card">
-                    <h2 style="color:rgb(207, 104, 245)">${city.toUpperCase()}</h2>
+                    <h2>${city.toUpperCase()}</h2>
                     <p>ГРАДУСЫ: ${data.current_condition[0].temp_C}°C</p>
                     <p>НЕБО: ${data.current_condition[0].lang_ru[0].value.toUpperCase()}</p>
                 </div>
@@ -115,7 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const res = await fetch(`https://jsonplaceholder.typicode.com/posts/1`, {
                 method: 'DELETE'
             });
-
             if (res.ok) {
                 localPosts = localPosts.filter(p => p.id !== id);
                 renderBlog();
