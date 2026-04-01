@@ -1,66 +1,82 @@
-.dark-theme header{
-                background-color: rgb(69, 64, 64);
-                color: white;
-                border-color: rgb(152, 135, 135);
-            }
-            .dark-theme .sign_in{
-                background-color: rgb(94, 83, 83);
-            }
-            .dark-theme .sign_in:hover{
-                background-color: rgb(152, 135, 135);
-            }
-            .dark-theme main{
-                background-color: rgb(96, 89, 89);
-                color: #d5d7e0;
-            }
-            .dark-theme h1{
-                color: #a8a9ac;
-            }
-            .dark-theme .buttonStartGame{
-                background-color: rgb(94, 83, 83);
-                border: solid 1px white;
-            }
-            .dark-theme .buttonStartGame:hover{
-                background-color: rgb(152, 135, 135);
-            }
-            .dark-theme .button_back_text{
-                color: #d0d1d3;
-            }
-            .dark-theme .background_text{
-                background-color: rgb(126, 111, 111);
-            }
-            .dark-theme .button_start{
-                background-color: rgb(94, 83, 83);
-                border: solid 1px white;
-            }
-            .dark-theme .button_start:hover{
-                background-color: rgb(152, 135, 135);
-            }
-            .dark-theme .feedback{
-                background-color: rgb(126, 111, 111);
-            }
-            .dark-theme footer{
-                background-color: rgb(69, 64, 64);
-                color: wheat;
-            }
-            .dark-theme .form-container{
-                background-color: rgb(126, 111, 111);;
-            }
-            .dark-theme .review{
-                background-color: #f5dcc1;
-            }
-            .dark-theme .buttonSubmit{
-                background-color: rgb(152, 135, 135);
-            }
-            .dark-theme .feedback_parent{
-                color: #d5d7e0;
-            }
-            .dark-theme h4{
-                color: #d5d7e0;
-            }
-            .dark-theme #reviewForm button{
-                background: rgb(152, 135, 135);
-            }
-            .dark-theme #reviewForm button:hover {
-                background: rgb(170, 162, 162);
-            }
+.dark-theme header {
+    background-color: rgb(69, 64, 64);
+    color: white;
+    border-color: rgb(152, 135, 135);
+}
+.dark-theme .lefthead, .dark-theme .righthead { 
+    color: white; 
+}
+.dark-theme .sign_in { 
+    background-color: rgb(94, 83, 83); color: white; 
+}
+.dark-theme .sign_in:hover { 
+    background-color: rgb(152, 135, 135); 
+}
+.dark-theme main { 
+    background-color: rgb(96, 89, 89); color: #d5d7e0; 
+}
+.dark-theme h1 { 
+    color: #a8a9ac; 
+}
+.dark-theme .buttonStartGame { 
+    background-color: rgb(94, 83, 83); 
+    border: solid 1px white; 
+    color: white; 
+}
+.dark-theme .button_back_text { 
+    color: #d0d1d3; 
+}
+.dark-theme .background_text { 
+    background-color: rgb(126, 111, 111); 
+}
+.dark-theme .button_start { 
+    background-color: rgb(94, 83, 83); 
+    border: solid 1px white; 
+}
+.dark-theme .feedback { 
+    background-color: rgb(126, 111, 111); 
+}
+.dark-theme footer { 
+    background-color: rgb(69, 64, 64); 
+    color: wheat; 
+}
+.dark-theme h4 { 
+    color: #d5d7e0; 
+}
+.dark-theme #reviewForm button {
+    background: rgb(152, 135, 135);
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.dark-theme .buttonStartGame {
+    background-color: rgb(94, 83, 83);
+    border: solid 1px white;
+    color: white;
+}
+
+.dark-theme .buttonStartGame:hover {
+    background-color: rgb(152, 135, 135);
+}
+
+.dark-theme #reviewForm button {
+    background: rgb(152, 135, 135);
+    color: white;
+    border: 1px solid white;
+}
+
+.dark-theme #reviewForm button:hover {
+    background: rgb(170, 162, 162);
+}
+
+.dark-theme .button_start {
+    background-color: rgb(94, 83, 83);
+    border: solid 1px white;
+    color: white;
+}
+
+.dark-theme .button_start:hover {
+    background-color: rgb(152, 135, 135);
+}
