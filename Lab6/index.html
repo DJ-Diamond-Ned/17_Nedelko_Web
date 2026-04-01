@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css">
+    <title>API</title>
 </head>
 <body>
 
 <header>
-    <input type="text" id="city" class="cityInput" placeholder="Введите город">
-    <button class="header_button" id="api1">Погода</button>
-    <button class="header_button" id="api2">Цитата</button>
-    <button class="header_button" id="api3">Факт</button>
-    <button class="header_button" id="api4">Котик</button>
+    <input type="text" id="userInput" class="cityInput" placeholder="ГОРОД ИЛИ ТЕКСТ">
+    <button class="header_button" id="api-weather">ПОГОДА</button>
+    <button class="header_button" id="api-cats">КОТИК</button>
+    <button class="header_button" id="api-posts">БЛОГ</button>
 </header>
 
-<main id="output"></main>
+<main id="output">
+    <div class="card">ВЫБЕРИТЕ ПУНКТ МЕНЮ</div>
+</main>
 
 <footer>
     <div class="footer_block">
@@ -26,6 +28,5 @@
 </footer>
 
 <script src="js/index.js" defer></script>
-
 </body>
 </html>
