@@ -16,12 +16,3 @@
 import { RouterLink } from 'vue-router'
 import { store } from '@/store.js'
 </script>
-
-<style scoped>
-.header_button {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-</style>

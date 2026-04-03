@@ -99,6 +99,13 @@ h2{
     outline: none;
 }
 
+.header_button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #output {
     margin: 20px auto 100px auto;
     width: 80%;
